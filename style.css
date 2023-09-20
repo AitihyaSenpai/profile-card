@@ -1,0 +1,106 @@
+/* Add your CSS styles here */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #4f709c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-up {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main-img-container {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.main-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #4f709c;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  text-align: center;
+  background-color: #213555;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  padding: 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-basis: 3;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #007acc;
+  font-size: 24px;
+}
+
+.social-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #e5d283;
+  margin-top: 20px;
+}
+
+.text {
+  font-size: 18px;
+  color: #c5abab;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.text-description {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.card-container:hover .text-description {
+  max-height: 100px; /* Adjust this value to control the maximum height when hovering */
+  opacity: 1;
+}
